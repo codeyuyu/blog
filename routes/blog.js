@@ -108,7 +108,7 @@ exports.comment = function (req, res, next) {
                 created:dateFormat(new Date(), "isoDateTime")
             };
 
-            //TODO 用户输入的验证，必填项，邮箱地址是否正确，URL是否正确（无前缀的自动带上http://）
+            // 用户输入的验证，必填项，邮箱地址是否正确，URL是否正确（无前缀的自动带上http://）
             if (comment.author == "" || comment.email == "") {
                 res.redirect("/post/" + post.slug);
             }

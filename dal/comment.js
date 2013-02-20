@@ -5,6 +5,8 @@
  * Time: 下午9:47
  * To change this template use File | Settings | File Templates.
  */
+
+    //todo 添加留言删除功能 = =好牛逼还可以这么用
 var db = require('../config.js').db;
 db.bind('comment');
 

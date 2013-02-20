@@ -22,19 +22,19 @@ exports.config = {
     // Feed Setting
     rss:{
         max_rss_items:"5",
-        title:"未志",
-        description:"willerce，写给未来的自己。",
-        link: process.env.RSS_LINK || "http://willerce.com",
+        title:"fish",
+        description:"写给未来的自己。",
+        link: process.env.RSS_LINK || "http://fishlynn.com",
         language:"zh-cn",
-        managingEditor:"willerce@gmail.com (willerce)",
-        webMaster:"willerce@gmail.com (willerce)",
-        generator:"noderce",
+        managingEditor:"codeyuyu@gmail.com (fish)",
+        webMaster:"codeyuyu@gmail.com (fish)",
+        generator:"codeyuyu",
         author:{
-            name:"willerce",
-            uri:"http://willerce.com"
+            name:"codeyuyu",
+            uri:"http://fishlynn.com"
         }
     }
 };
 
 //mongodb settings
-exports.db = mongoskin.db(process.env.MONGOLAB_URI || "mongodb://localhost/noderce");//数据库连接串
+exports.db = mongoskin.db(process.env.MONGOLAB_URI || "http://localhost:27017/");//数据库连接串
