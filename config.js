@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created with JetBrains WebStorm.
  * User: fish
  * Date: 13-2-17
@@ -37,4 +37,4 @@ exports.config = {
 };
 
 //mongodb settings
-exports.db = mongoskin.db(process.env.MONGOLAB_URI || "http://localhost:27017/");//数据库连接串
+exports.db = mongoskin.db(process.env.MONGOLAB_URI || "mongodb:http://localhost:27017/");//数据库连接串

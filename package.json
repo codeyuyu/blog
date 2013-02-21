@@ -8,6 +8,11 @@
   "dependencies": {
     "express": "3.1.0",
     "jade": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+     "data2xml": ">=0.5.0",
+     "mongoskin": ">=0.4.1",
+     "marked": ">=0.2.5",
+     "dateformat":"1.0.2-1.2.3",
+      "gravatar":"*"
   }
 }
