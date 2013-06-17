@@ -1,18 +1,24 @@
 {
-  "name": "fish",
+  "name": "blog",
+  "preferGlobal": "true",
   "version": "0.0.1",
+  "author": "fish <codeyuyu@gmail.com>",
+  "description": " blog ",
   "private": true,
   "scripts": {
     "start": "node app"
   },
+   "engines": {
+    "node": "0.8.9",
+    "npm": "1.1.43"
+  },
   "dependencies": {
-    "express": "3.1.0",
-    "jade": "*",
-    "less-middleware": "*",
-     "data2xml": ">=0.5.0",
-     "mongoskin": ">=0.4.1",
-     "marked": ">=0.2.5",
-     "dateformat":"1.0.2-1.2.3",
-      "gravatar":"*"
+      "express": "3.0.0",
+    "jade": "0.27.2",
+    "data2xml": "0.5.0",
+    "mongoskin": "0.4.1",
+    "marked": "0.2.5",
+    "dateformat":"1.0.2-1.2.3",
+     "gravatar":"*"
   }
 }
