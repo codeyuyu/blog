@@ -50,9 +50,9 @@ exports.format_date = function(date, friendly) {
  * @returns md5 str
  */
 exports.md5 = function md5(str) {
-    var md5sum = crypto.createHash('md5');
-    md5sum.update(str);
-    str = md5sum.digest('hex');
+    //var md5sum = crypto.createHash('md5');
+    //md5sum.update(str);
+    //str = md5sum.digest('hex');
     return str;
 };
 
@@ -64,10 +64,11 @@ exports.md5 = function md5(str) {
  * @returns str
  */
 exports.encrypt = function encrypt(str, secret) {
-    var cipher = crypto.createCipher('aes192', secret);
-    var enc = cipher.update(str, 'utf8', 'hex');
-    enc += cipher.final('hex');
-    return enc;
+    //var cipher = crypto.createCipher('aes192', secret);
+    //var enc = cipher.update(str, 'utf8', 'hex');
+    //enc += cipher.final('hex');
+    //return enc;
+    return str;
 };
 
 /**
@@ -77,8 +78,9 @@ exports.encrypt = function encrypt(str, secret) {
  * @returns str
  */
 exports.decrypt = function decrypt(str, secret) {
-    var decipher = crypto.createDecipher('aes192', secret);
-    var dec = decipher.update(str, 'hex', 'utf8');
-    dec += decipher.final('utf8');
-    return dec;
+    //var decipher = crypto.createDecipher('aes192', secret);
+    //var dec = decipher.update(str, 'hex', 'utf8');
+    //dec += decipher.final('utf8');
+    //return dec;
+    return str;
 };

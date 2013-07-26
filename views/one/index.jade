@@ -1,32 +1,57 @@
 extends layout
 
 append head
-  title #{title}
+    title #{title}
 
 block content
-  section#main.container
-    div.content
-      section.posts
-        - posts.forEach(function(item){
-          article.post.block
-              h2.title
-                a(href="/post/" + item.slug) #{item.title}
-              div.meta
-                time #{item.created}
-              div.entry !{item.content}
-        - })
-        div.navigation.block
-          table(width="100%")
-            tbody
-              tr
-                td(width="120", align="left")
-                  - if (crtP > 1)
-                    div.alignleft
-                      a(href="/p/"+ (crtP -1))« 上一页
-                td(width="auto", align="center")
-                  strong.fade
-                    !{crtP} / !{maxP}
-                td(width="120", align="right)
-                  - if (nextP > crtP)
-                    div.alignright
-                      a(href="/p/"+nextP) 下一页 »
+    div.ad_morning_box
+        div.ad_morning
+            section.pic-inner
+                table.pic-table(width='980')
+                    tr
+                        td(width='245', rowspan='2')
+                            a
+                                img(src='/theme/fish/images/1.jpg', height='400px', width='240')
+                        td(colspan='2')
+                            a
+                                img(src='/theme/fish/images/3.jpg', height='250px', width='488')
+                        td(width='245', rowspan='2')
+                            a
+                                img(src='/theme/fish/images/5.jpg', height='400px', width='240')
+                    tr
+                        td(width='245')
+                            a
+                                img(src='/theme/fish/images/2.jpg', height='150px', width='243')
+                        td(width='245')
+                            a
+                                img(src='/theme/fish/images/4.jpg', height='150px', width='243')
+            section#main.container
+                div.content
+                    section.posts
+                        - posts.forEach(function(item){
+                            article.post.block
+                                h2.title
+                                    a(href="/post/" + item.slug) #{item.title}
+                                div.meta
+                                    time #{item.created}
+                                div.entry !{item.content}
+                        - })
+                        div.navigation.block
+                            table(width="100%")
+                                tbody
+                                    tr
+                                        td(width="120", align="left")
+                                            - if (crtP > 1)
+                                                div.alignleft
+                                                    a(href="/p/"+ (crtP -1))« 上一页
+                                        td(width="auto", align="center")
+                                            strong.fade
+                                                !{crtP} / !{maxP}
+                                        td(width="120", align="right)
+                                            - if (nextP > crtP)
+                                                 div.alignright
+                                                    a(href="/p/"+nextP) 下一页 »
+
+
+
+

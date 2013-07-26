@@ -236,7 +236,7 @@ exports.disqus = function (req, res) {
             var post = result[a];
             console.log('文章：' + post.title);
             for (var i = 0; i < t.disqus.thread.length; i++) {
-                if (t.disqus.thread[i].link == 'http://willerce.com/post/' + post.slug) {
+                if (t.disqus.thread[i].link == 'http://fishlynn.com/post/' + post.slug) {
                     console.log("找到了文章:" + post.title + "，接着找评论");
                     var dsq_id = t.disqus.thread[i]['-dsq:id'];
                     for (var j = 0; j < t.disqus.post.length; j++) {
@@ -302,7 +302,7 @@ exports.install = function (req, res, next) {
                             var post = {
                                 title:"Hello world!",
                                 slug:"hello-world",
-                                content:"欢迎使用 noderce. 这是程序自动发布的一篇文章。欢迎 fork noderce : https://github.com/willerce/noderce",
+                                content:"欢迎使用",
                                 created:dateFormat(new Date(), "yyyy-mm-dd")
                             };
 
@@ -312,10 +312,10 @@ exports.install = function (req, res, next) {
                                     var comment = {
                                         post_id:post._id.toString(),
                                         post_slug:post.slug,
-                                        author:"willerce",
-                                        email:"willerce@gmail.com",
-                                        url:"http://willerce.com",
-                                        content:"欢迎使用Noderce，欢迎与我交流Nodejs相关技术、",
+                                        author:"fish",
+                                        email:"codeyuyu@gmail.com",
+                                        url:"http://fishlynn.com",
+                                        content:"欢迎使用",
                                         created:dateFormat(new Date(), "isoDateTime")
                                     };
 
